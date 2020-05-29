@@ -395,10 +395,6 @@ p {
   margin-bottom: 73px;
 }
 
-.iphone-features__text {
-  margin-bottom: 30px;
-}
-
 .iphone-features__text p {
   margin-bottom: 30px;
 }
@@ -428,6 +424,18 @@ p {
   font-size: 16px;
 }
 
+@media (max-width: 807px) {
+  .iphone-features__blue-button {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 766px) {
+  .iphone-features__blue-button {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 403px) {
   .iphone-features__blue-button {
     width: 100%;
@@ -450,4 +458,147 @@ p {
     margin-top: 20px;
     width: 100%;
   }
+}
+
+.map-feature {
+  overflow: hidden;
+  padding-top: 206px;
+  padding-bottom: 198px;
+}
+
+@media (min-width: 767px) {
+  .map-feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.map-feature__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 767px) {
+  .map-feature__content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 766px) {
+  .map-feature__content {
+    margin-bottom: 50px;
+  }
+}
+
+.map-feature__body {
+  width: 50%;
+}
+
+@media (max-width: 766px) {
+  .map-feature__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+.map-feature__title {
+  margin-bottom: 73px;
+}
+
+@media (max-width: 766px) {
+  .map-feature__title {
+    text-align: center;
+  }
+}
+
+.map-feature__text {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 766px) {
+  .map-feature__text {
+    text-align: center;
+  }
+}
+
+.map-feature__text p {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 766px) {
+  .map-feature__partners {
+    text-align: center;
+  }
+}
+
+.map-feature__subtitle {
+  color: #26272d;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+}
+
+.map-feature__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+@media (max-width: 353px) {
+  .map-feature__logos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.map-feature__evernote {
+  padding: 15px;
+}
+
+.map-feature__dropbox {
+  padding: 15px;
+}
+
+.map-feature__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 767px) {
+  .map-feature__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -webkit-transform: translate(-91%, 0);
+            transform: translate(-91%, 0);
+  }
+}
+
+.map-feature__image img {
+  max-width: 100%;
 }
