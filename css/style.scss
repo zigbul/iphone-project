@@ -1,0 +1,264 @@
+@import "_nullstyle";
+
+.container {
+   max-width: 1210px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+h2 {
+   color: #26272d;
+   font-size: 26px;
+}
+
+p {
+   color: #8c8f94;
+   font-size: 20px;
+}
+
+.btn {
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   min-height: 43px;
+   min-width: 133px;
+   border-radius: 20px;
+   &__item {
+      padding: 10px 5px;
+   }
+}
+
+.header {
+   background: url("../img/mountain-bg.png") no-repeat;
+   background-size: cover;
+   padding: 43px 0 0 0;
+   overflow: hidden;
+   &__row {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      @media (max-width: 400px) {
+         flex-direction: column;
+         align-content: center;
+      }
+   }
+
+   &__menu {
+      display: flex;
+   }
+
+   &__logo {
+      padding: 0 30px;
+      @media (max-width: 425px) {
+         padding: 0;
+      }
+   }
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__title {
+      font-size: 62px;
+      margin-top: 113px;
+      text-align: center;
+   }
+
+   &__text {
+      max-width: 780px;
+      text-align: center;
+      font-size: 20px;
+      margin-top: 40px;
+      color: #8c8f94;
+   }
+
+   &__btn {
+      border: 1px solid #dedbde;
+      color: #26272d;
+      margin-top: 41px;
+      margin-bottom: 55px;
+   }
+
+   &__img {
+      margin-bottom: -297px;
+   }
+}
+
+.menu1 {
+   &__burger {
+      margin-right: 30px;
+      @media (max-width: 400px) {
+         margin: 20px 0;
+      }
+   }
+
+   &__link {
+      margin-right: 40px;
+      font-size: 16px;
+      color: #26272d;
+      @media (max-width: 785px) {
+         display: none;
+      }
+   }
+   &__link:last-child {
+      margin-right: 0;
+   }
+}
+.link-active {
+   color: #b5b6b5;
+}
+
+.menu2 {
+   align-items: center;
+   &__link {
+      font-size: 16px;
+      margin-right: 31px;
+      color: #292c31;
+      font-size: 16px;
+      @media (max-width: 785px) {
+         display: none;
+      }
+   }
+
+   &__btn {
+      background: #267ef4;
+      color: #ffffff;
+      @media (max-width: 400px) {
+         min-width: 400px;
+         border-radius: 0;
+         margin-top: 30px;
+      }
+   }
+}
+
+.features {
+   padding: 120px 0 40px 0;
+   overflow: hidden;
+   &__row {
+      display: flex;
+      margin: -50px;
+      @media (max-width: 767px) {
+         flex-direction: column;
+      }
+   }
+
+   &__column {
+      flex-basis: 50%;
+      padding: 50px;
+      @media (max-width: 767px) {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   &__title {
+      margin: 45px 0 47px 0;
+      @media (max-width: 767px) {
+         text-align: center;
+      }
+   }
+
+   &__text p {
+      margin-bottom: 40px;
+      line-height: 150%;
+      @media (max-width: 767px) {
+         text-align: center;
+      }
+   }
+
+   &__line {
+      width: 100%;
+      height: 2px;
+      background: #f7f3f7;
+      margin-top: 125px;
+   }
+}
+
+.iphone-features {
+   overflow: hidden;
+   padding-top: 87px;
+   padding-bottom: 42px;
+   @media (min-width: 767px) {
+      display: flex;
+   }
+
+   &__image {
+      @media (min-width: 767px) {
+         flex: 0 0 50%;
+         transform: translate(-100px, 0);
+      }
+
+   }
+
+   &__image img {
+      max-width: 100%;
+      filter: drop-shadow(0px 10px 5px #b7b7b8)
+   }
+
+   &__content {
+      align-self: center;
+      @media (min-width: 767px) {
+         flex: 0 0 50%;
+      }
+   }
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      max-width: 570px;
+   }
+
+   &__title {
+      margin-bottom: 73px;
+   }
+
+   &__text {
+      margin-bottom: 30px;
+   }
+   &__text p {
+      margin-bottom: 30px;
+   }
+
+   &__buttons {
+      margin-top: 74px;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &__blue-button {
+      display: flex;
+      justify-content: space-between;
+      background: #267ef4;
+      color: #fff;
+      min-width: 203px;
+      padding-right: 19px;
+      padding-left: 27px;
+      margin-right: 18px;
+      font-size: 16px;
+      @media (max-width: 403px) {
+         width: 100%;
+         justify-content: center;
+         margin-right: 0;
+      }
+   }
+
+   &__button {
+      min-width: 143px;
+      border: 1px solid #efebef;
+      color: #292831;
+      font-size: 16px;
+      @media (max-width: 403px) {
+         margin-top: 20px;
+         width: 100%;
+      }
+   }
+}
