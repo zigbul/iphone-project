@@ -602,3 +602,119 @@ p {
 .map-feature__image img {
   max-width: 100%;
 }
+
+.iphone-screens {
+  overflow: hidden;
+  background-color: #F4F6F7;
+  padding-top: 143px;
+  padding-bottom: 124px;
+}
+
+.iphone-screens__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iphone-screens__title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #267DF4;
+  margin: 43px auto 46px auto;
+}
+
+.iphone-screens__subtitle {
+  font-size: 12px;
+  color: #8C8F94;
+  margin-bottom: 46px;
+}
+
+.iphone-screens__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 766px) {
+  .iphone-screens__images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.iphone-screens__images img {
+  max-width: 100%;
+  -webkit-filter: drop-shadow(0px 20px 10px #b7b7b8);
+          filter: drop-shadow(0px 20px 10px #b7b7b8);
+}
+
+.iphone-screens__1screen {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 767px) {
+  .iphone-screens__1screen {
+    -webkit-transform: translate(-83px, 0);
+            transform: translate(-83px, 0);
+    margin-bottom: 0;
+  }
+}
+
+.iphone-screens__2screen {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 767px) {
+  .iphone-screens__2screen {
+    -webkit-transform: translate(-41.5px, 0);
+            transform: translate(-41.5px, 0);
+    margin-bottom: 0;
+  }
+}
+
+.iphone-screens__iphone {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 767px) {
+  .iphone-screens__iphone {
+    margin-bottom: 0;
+  }
+}
+
+.iphone-screens__3screen {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 767px) {
+  .iphone-screens__3screen {
+    -webkit-transform: translate(41.5px, 0);
+            transform: translate(41.5px, 0);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 767px) {
+  .iphone-screens__4screen {
+    -webkit-transform: translate(83px, 0);
+            transform: translate(83px, 0);
+    margin-bottom: 0;
+  }
+}
