@@ -81,7 +81,15 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   color: #26272d;
+  font-size: 42px;
+}
+
+h3 {
   font-size: 26px;
+}
+
+h4 {
+  font-size: 12px;
 }
 
 p {
@@ -605,7 +613,7 @@ p {
 
 .iphone-screens {
   overflow: hidden;
-  background-color: #F4F6F7;
+  background-color: #f4f6f7;
   padding-top: 143px;
   padding-bottom: 124px;
 }
@@ -628,13 +636,13 @@ p {
   display: block;
   width: 50px;
   height: 3px;
-  background-color: #267DF4;
+  background-color: #267df4;
   margin: 43px auto 46px auto;
 }
 
 .iphone-screens__subtitle {
   font-size: 12px;
-  color: #8C8F94;
+  color: #8c8f94;
   margin-bottom: 46px;
 }
 
@@ -717,4 +725,134 @@ p {
             transform: translate(83px, 0);
     margin-bottom: 0;
   }
+}
+
+.ready-to-buy {
+  background-color: #F4F6F7;
+  padding-top: 76px;
+  padding-bottom: 131px;
+  overflow: hidden;
+}
+
+.ready-to-buy__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ready-to-buy__subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  color: #3a3d4b;
+}
+
+.ready-to-buy__subtitle span {
+  font-weight: 900;
+}
+
+.ready-to-buy__subtitle:nth-child(4) {
+  margin-bottom: 21px;
+}
+
+.ready-to-buy__title {
+  margin: 37px 0 45px 0;
+  text-align: center;
+}
+
+.ready-to-buy__form {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 503px;
+  border: 1px solid #cecbce;
+  border-radius: 20px;
+  padding: 1px 1px 1px 28px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 67px;
+}
+
+@media (max-width: 507px) {
+  .ready-to-buy__form {
+    width: auto;
+  }
+}
+
+@media (max-width: 371px) {
+  .ready-to-buy__form {
+    width: 100%;
+    padding: 1px 1px 1px 1px;
+  }
+}
+
+.ready-to-buy__form input {
+  background-color: #F4F6F7;
+}
+
+@media (max-width: 371px) {
+  .ready-to-buy__form input {
+    padding: 10px 0px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 371px) {
+  .ready-to-buy__form input::-webkit-input-placeholder {
+    text-align: center;
+  }
+  .ready-to-buy__form input:-ms-input-placeholder {
+    text-align: center;
+  }
+  .ready-to-buy__form input::-ms-input-placeholder {
+    text-align: center;
+  }
+  .ready-to-buy__form input::placeholder {
+    text-align: center;
+  }
+}
+
+.ready-to-buy__btn {
+  background-color: #70c755;
+  color: #fff;
+  font-size: 16px;
+}
+
+@media (max-width: 371px) {
+  .ready-to-buy__btn {
+    width: 100%;
+  }
+}
+
+.ready-to-buy__btn div img {
+  width: 150%;
+}
+
+.apple-button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 170px;
+  color: #fff;
+  background: #000;
+  font-size: 12px;
+  margin: 0 -15px;
+}
+
+.apple-button div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.apple-button span {
+  font-size: 20px;
 }

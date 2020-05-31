@@ -8,7 +8,15 @@
 
 h2 {
    color: #26272d;
+   font-size: 42px;
+}
+
+h3 {
    font-size: 26px;
+}
+
+h4 {
+   font-size: 12px;
 }
 
 p {
@@ -240,7 +248,7 @@ p {
       padding-left: 27px;
       margin-right: 18px;
       font-size: 16px;
-      @media   (max-width: 807px) {
+      @media (max-width: 807px) {
          margin-bottom: 20px;
       }
 
@@ -317,7 +325,6 @@ p {
       @media (max-width: 766px) {
          text-align: center;
       }
-
    }
 
    &__subtitle {
@@ -363,7 +370,7 @@ p {
 
 .iphone-screens {
    overflow: hidden;
-   background-color: #F4F6F7;
+   background-color: #f4f6f7;
    padding-top: 143px;
    padding-bottom: 124px;
    &__content {
@@ -377,13 +384,13 @@ p {
       display: block;
       width: 50px;
       height: 3px;
-      background-color: #267DF4;
-      margin: 43px auto 46px auto; 
+      background-color: #267df4;
+      margin: 43px auto 46px auto;
    }
 
    &__subtitle {
       font-size: 12px;
-      color: #8C8F94;
+      color: #8c8f94;
       margin-bottom: 46px;
    }
 
@@ -404,22 +411,22 @@ p {
    &__1screen {
       margin-bottom: 20px;
       @media (min-width: 767px) {
-      transform: translate(-83px, 0);
-      margin-bottom: 0;
+         transform: translate(-83px, 0);
+         margin-bottom: 0;
       }
    }
 
    &__2screen {
       margin-bottom: 20px;
       @media (min-width: 767px) {
-      transform: translate(-41.5px, 0);
-      margin-bottom: 0;
+         transform: translate(-41.5px, 0);
+         margin-bottom: 0;
       }
    }
 
    &__iphone {
       margin-bottom: 20px;
-      @media (min-width:  767px) {
+      @media (min-width: 767px) {
          margin-bottom: 0;
       }
    }
@@ -427,16 +434,110 @@ p {
    &__3screen {
       margin-bottom: 20px;
       @media (min-width: 767px) {
-      transform: translate(41.5px, 0);
-      margin-bottom: 0;
+         transform: translate(41.5px, 0);
+         margin-bottom: 0;
       }
    }
 
    &__4screen {
       @media (min-width: 767px) {
-      transform: translate(83px, 0);
-      margin-bottom: 0;
+         transform: translate(83px, 0);
+         margin-bottom: 0;
       }
    }
 }
 
+.ready-to-buy {
+   background-color: #F4F6F7;
+   padding-top: 76px;
+   padding-bottom: 131px;
+   overflow: hidden;
+   &__row {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__subtitle {
+      text-align: center;
+      text-transform: uppercase;
+      color: #3a3d4b;
+   }
+
+   &__subtitle span {
+      font-weight: 900;
+   }
+
+   &__subtitle:nth-child(4) {
+      margin-bottom: 21px;
+   }
+
+   &__title {
+      margin: 37px 0 45px 0;
+      text-align: center;
+   }
+
+   &__form {
+      align-self: center;
+      display: flex;
+      flex-wrap: wrap;
+      width: 503px;
+      border: 1px solid #cecbce;
+      border-radius: 20px;
+      padding: 1px 1px 1px 28px;
+      justify-content: space-between;
+      margin-bottom: 67px;
+      @media (max-width: 507px) {
+         width: auto;
+      }
+      @media (max-width: 371px) {
+         width: 100%;
+         padding: 1px 1px 1px 1px;
+      }
+   }
+
+   &__form input {
+      background-color: #F4F6F7;
+      @media (max-width: 371px) {
+         padding: 10px 0px;
+         margin: 0 auto;
+         border-radius: 20px;
+      }
+   }
+
+   &__form input::placeholder {
+      @media (max-width: 371px) {
+         text-align: center;
+      }
+   }
+
+   &__btn {
+      background-color: #70c755;
+      color: #fff;
+      font-size: 16px;
+      @media (max-width: 371px) {
+         width: 100%;
+      }
+   }
+
+   &__btn div img {
+      width: 150%;
+   }
+}
+
+.apple-button {
+   align-self: center;
+   width: 170px;
+   color: #fff;
+   background: #000;
+   font-size: 12px;
+   margin: 0 -15px;
+}
+
+.apple-button div {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.apple-button span {
+   font-size: 20px;
+}
